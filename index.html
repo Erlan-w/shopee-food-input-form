@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		<!-- My CSS -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<title>Input Form | Erlan Wahyu</title>
+	</head>
+
+	<body id="home">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">Erlan Wahyu</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav  ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Akhir Navbar -->
+
+		<!-- contact -->
+		<section id="formInput">
+			<div class="container">
+				<div class="row text-center m-4">
+					<div class="col">
+						<h2>Masukkan Pesanan Anda</h2>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-6">
+						<div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+							<strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+							<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+						</div>
+						<form name="shopee-food-input-form">
+							<div class="mb-3">
+								<label for="time">Waktu</label>
+								<input type="time" class="form-control" aria-describedby="time" name="Time" id="time" />
+							</div>
+							<div class="mb-3">
+								<label for="noPesanan" class="form-label">No Pesanan</label>
+								<input type="text" class="form-control" id="noPesanan" aria-describedby="noPesanan" name="No Pesanan">
+							</div>
+							<div class="mb-3">
+								<label for="price" class="form-label">Harga Barang</label>
+								<input type="price" class="form-control" id="price" aria-describedby="price" name="Harga Barang">
+							</div>
+							<div class="mb-3">
+								<label for="payment" class="form-label">Di Bayar</label>
+								<input type="payment" class="form-control" id="payment" aria-describedby="payment" name="Di Bayar">
+							</div>
+							<div class="mb-3">
+								<label for="parkingCash" class="form-label">Parkir Cash</label>
+								<input type="parkingCash" class="form-control" id="parkingCash" aria-describedby="parkingCash"
+									name="Parkir Cash">
+							</div>
+							<div class="mb-3">
+								<label for="Penghasilan" class="form-label">Penghasilan</label>
+								<input type="Penghasilan" class="form-control" id="Penghasilan" aria-describedby="Penghasilan"
+									name="Penghasilan">
+							</div>
+							<div class="mb-3">
+								<label for="parkirShopee" class="form-label">Parkir Shopee</label>
+								<input type="parkirShopee" class="form-control" id="parkirShopee" aria-describedby="parkirShopee"
+									name="Parkir Shopee">
+							</div>
+							<div class="mb-3">
+								<label for="tip" class="form-label">Tip</label>
+								<input type="tip" class="form-control" id="tip" aria-describedby="tip" name="Tip">
+							</div>
+							<div class="mb-3">
+								<label for="insentif" class="form-label">Insentif</label>
+								<input type="insentif" class="form-control" id="insentif" aria-describedby="insentif" name="Insentif">
+							</div>
+
+							<button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+							<button class="btn btn-primary btn-loading d-none" type="button" disabled>
+								<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+								Loading...
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+				<path fill="#0d6efd" fill-opacity="1"
+					d="M0,128L34.3,122.7C68.6,117,137,107,206,133.3C274.3,160,343,224,411,250.7C480,277,549,267,617,218.7C685.7,171,754,85,823,80C891.4,75,960,149,1029,154.7C1097.1,160,1166,96,1234,74.7C1302.9,53,1371,75,1406,85.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+				</path>
+			</svg>
+		</section>
+		<!-- Akhir Contact -->
+
+		<!-- Footer -->
+		<footer class="bg-primary text-white text-center pb-5">
+			<p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/erlan_w/"
+					class="text-white fw-bold">Erlan Wahyu</a></p>
+		</footer>
+		<!-- Akhir Footer -->
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"></script>
+
+		<script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbx3ixbgqVKnxPf0R8puHNOYjyy6QACygs8DKBPVZeYdXLeWquZDDIaWrLCgoRbKNfXC/exec'
+			const form = document.forms['shopee-food-input-form'];
+			const btnKirim = document.querySelector( '.btn-kirim' );
+			const btnLoading = document.querySelector( '.btn-loading' );
+			const myAlert = document.querySelector( '.my-alert' );
+
+			form.addEventListener( 'submit', e => {
+				e.preventDefault();
+				// ketika tombol submit diklik
+				// tampilkan tombol loading, hilangkan tombol kirim
+				btnLoading.classList.toggle( 'd-none' );
+				btnKirim.classList.toggle( 'd-none' );
+				fetch( scriptURL, { method: 'POST', body: new FormData( form ) } )
+					.then( response => {
+						// tampilkan tombol kirim, hilangkan tombol loading
+						btnLoading.classList.toggle( 'd-none' );
+						btnKirim.classList.toggle( 'd-none' );
+						// tampilkan alert
+						myAlert.classList.toggle( 'd-none' );
+						// reset formnya
+						form.reset();
+						console.log( 'Success!', response )
+					} )
+					.catch( error => console.error( 'Error!', error.message ) )
+			} )
+		</script>
+
+	</body>
+
+</html>
